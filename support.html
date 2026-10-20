@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wordrange Support</title>
+<meta name="description" content="Help with Wordrange: how it counts words, what each part includes, PDFs, and how to move a passage to another part.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="30" height="30">Wordrange</a>
+    <nav class="nav" aria-label="Main">
+      <a href="./" class="hide-sm">Home</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap narrow">
+    <h1>Support</h1>
+    <p>A count that looks wrong, or a question the answers below don’t cover? Email <a href="mailto:contact+wordrange@victorshammas.com?subject=Wordrange%20support">contact+wordrange@victorshammas.com</a>. I read every message.</p>
+    <ul class="toc">
+      <li><a href="#start">Getting started</a></li>
+      <li><a href="#words">How words are counted</a></li>
+      <li><a href="#parts">The parts</a></li>
+      <li><a href="#pdf">PDFs and scanned pages</a></li>
+      <li><a href="#many">Many documents</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <h2 id="start">Getting started</h2>
+    <details open>
+      <summary>How do I count a manuscript?</summary>
+      <p>Drag it onto the Wordrange window, or choose <em>File › Count Documents…</em> (<kbd>⌘O</kbd>). The count appears straight away. Tick the parts your word limit includes; Wordrange remembers your choice for next time.</p>
+      <p>To see how it works first, choose <em>Help › Count the Sample Manuscript</em>.</p>
+    </details>
+    <details>
+      <summary>Which files can I use?</summary>
+      <p>PDF, Word (.docx and .doc), Markdown, LaTeX (.tex), RTF, OpenDocument (.odt), HTML, EPUB and plain text.</p>
+    </details>
+    <details>
+      <summary>How do I check the count against a limit?</summary>
+      <p>Enter the fewest and most words allowed under <em>Word range</em>, for example 6,000 and 8,000. Leave one empty for a limit with only a maximum or only a minimum. Wordrange says whether the count is within the range, or how many words over or short it is.</p>
+    </details>
+    <details>
+      <summary>How do I copy the count?</summary>
+      <p>Click <em>Copy</em> next to the number, or press <kbd>⇧⌘C</kbd>. You get the number with what it includes, for example “7,948 words (main text and notes)”, ready for a cover letter.</p>
+    </details>
+
+    <h2 id="words">How words are counted</h2>
+    <details open>
+      <summary>Does it count like Microsoft Word?</summary>
+      <p>It follows Word’s rules, which are what journals and universities go by. A word is anything between spaces that has a letter or a digit in it. “Well-known” and “and/or” are one word each; “1990–2000” and “this—that” are two, because a dash between words separates them; a dash or an ampersand standing alone isn’t a word. Each Chinese or Japanese character counts as a word.</p>
+    </details>
+    <details>
+      <summary>Why is the count different from Word’s?</summary>
+      <p>Usually because Word counts different parts. Word counts the whole document, including the title page, abstract, references and appendices, and footnotes only if <em>Include textboxes, footnotes and endnotes</em> is ticked. Tick the same parts in Wordrange and the counts should agree closely.</p>
+    </details>
+    <details>
+      <summary>Are characters counted too?</summary>
+      <p>Yes: characters with and without spaces, for the parts you’ve ticked, are shown below the number.</p>
+    </details>
+
+    <h2 id="parts">The parts</h2>
+    <ul class="verdicts">
+      <li><strong>Title and front matter.</strong> The title, authors, affiliations, keywords and dates before the text, and a journal’s copyright, licence and DOI lines wherever they appear.</li>
+      <li><strong>Abstract.</strong> The abstract or summary: under its own heading, run in after the word “Abstract”, or the paragraph above the keywords.</li>
+      <li><strong>Main text.</strong> The text with its headings and block quotations.</li>
+      <li><strong>Footnotes and endnotes.</strong> Every note, and a Notes section at the end.</li>
+      <li><strong>Tables and figure captions.</strong> Captions such as “Figure 2. …” and “Table 1: …”, and the text in a Word file’s tables and text boxes.</li>
+      <li><strong>References.</strong> The reference list or bibliography.</li>
+      <li><strong>Appendices.</strong> Appendices and supplementary material.</li>
+      <li><strong>Acknowledgments and statements.</strong> Acknowledgments, funding, declarations of interest, data availability, author contributions and biographies.</li>
+    </ul>
+    <details>
+      <summary>A paragraph is counted in the wrong part.</summary>
+      <p>Control-click it in the text below the parts and choose <em>Count As</em>, then the right part. The count changes at once. To see only what was counted in one part, click the filter button at the end of its row.</p>
+    </details>
+    <details>
+      <summary>Which parts should I tick?</summary>
+      <p>Whatever your journal’s or university’s instructions say. “Including notes, excluding references” is main text and notes. “Everything except the abstract and references” adds tables, appendices and statements. If the instructions say “all inclusive”, tick every part.</p>
+    </details>
+
+    <h2 id="pdf">PDFs and scanned pages</h2>
+    <details open>
+      <summary>How can it count a PDF correctly?</summary>
+      <p>Wordrange reads the page layout: it leaves out running heads, page numbers and line numbers, joins words hyphenated at the end of a line, reads two-column pages in order, and takes the smaller type at the foot of a page as footnotes. A PDF made from Word or LaTeX (<em>Save as PDF</em>) gives the most exact count.</p>
+    </details>
+    <details>
+      <summary>What doesn’t it know about a PDF?</summary>
+      <p>A table in a PDF is counted with the text around it, and words inside a chart drawn into the PDF count as text. Look through the text list for these and move them with <em>Count As</em> if your limit leaves tables out.</p>
+    </details>
+    <details>
+      <summary>What about scanned PDFs?</summary>
+      <p>Pages without text are read with the Mac’s built-in text recognition, on your Mac. The count of a scanned page may be off by a few words.</p>
+    </details>
+    <details id="access">
+      <summary>Wordrange says it can’t read a file.</summary>
+      <p>A password-protected PDF can’t be read; remove the password first. Wordrange can read only the files you choose (a Mac App Store rule), so choose the original file, not an alias to it.</p>
+    </details>
+
+    <h2 id="many">Many documents</h2>
+    <details>
+      <summary>Can I count a folder of essays?</summary>
+      <p>Yes. Drop the folder on the window and every document in it is counted, each in the list with its count, and a red or green mark for the word range. <em>File › Export Counts as Spreadsheet</em> (<kbd>⌘E</kbd>) saves all of them, part by part, as a CSV file for Numbers or Excel.</p>
+    </details>
+    <details>
+      <summary>Does Wordrange change my files?</summary>
+      <p>No. It only reads them.</p>
+    </details>
+
+    <h2 id="contact">Contact</h2>
+    <p>Email <a href="mailto:contact+wordrange@victorshammas.com?subject=Wordrange%20support">contact+wordrange@victorshammas.com</a>. If a count looks wrong, it helps to say which passage was counted in the wrong part.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer"><a href="./">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:contact+wordrange@victorshammas.com">Contact</a></nav>
+    <p>© 2026 Victor Shammas</p>
+  </div>
+</footer>
+</body>
+</html>
