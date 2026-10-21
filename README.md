@@ -21,10 +21,17 @@ The user site (`victor-shammas.github.io`) has the custom domain `victorshammas.
 project repo with Pages turned on is served at `https://victorshammas.com/<repo-name>/`. This repo must be
 named `wordrange` and needs no `CNAME` file. Pages: Settings › Pages › Deploy from a branch › `main`, `/ (root)`.
 
-## At launch
+## The free download
 
-- Replace the "Coming soon" span in `index.html` with the App Store link in the comment above it
-  (`https://apps.apple.com/app/idPLACEHOLDER`, with the numeric Apple ID from App Store Connect). Optionally
-  use Apple's official "Download on the Mac App Store" badge, following Apple's badge rules.
-- Add Wordrange to https://victorshammas.com/apps/ (`static/apps/index.html` in `victor-shammas.github.io`)
-  and to the app bar of the other apps' sites.
+The download button links to `https://github.com/victor-shammas/wordrange/releases/latest/download/Wordrange.dmg`:
+the latest release of this repo. Releases hold only the notarized DMG, never source code (that's in the private
+repo `wordrange-app`). To publish a new version, in the app repo: `scripts/release-direct.sh`, then
+`gh release create v<version> build/direct/Wordrange.dmg -R victor-shammas/wordrange --title "Wordrange <version>"`,
+and update the version in the hero's fine print.
+
+## At the App Store launch
+
+- Add the App Store button from the comment under the download button in `index.html`
+  (`https://apps.apple.com/app/id6825066145`). Optionally use Apple's official "Download on the Mac App Store"
+  badge, following Apple's badge rules.
+- Change the "Coming soon" pill on https://victorshammas.com/apps/ and the Apps board card.
